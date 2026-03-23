@@ -7,9 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
 <body class="bg-blue-900 text-white flex flex-col items-center min-h-screen pt-20">
+
+<h1 class="text-4xl font-extrabold mb-8">SMAAH Tic Tok Toe</h1>
+
+<div class="flex gap-5 mb-6">
+  <button id="playAI" class="btn-hover px-6 py-3 rounded-lg font-semibold bg-green-600">Play with AI</button>
+  <button id="playHuman" class="btn-hover px-6 py-3 rounded-lg font-semibold bg-indigo-600">Play with Human</button>
+</div>
 
 <div class="grid grid-cols-3 gap-4 mb-6">
   <div class="cell w-24 h-24 bg-blue-800 flex items-center justify-center text-4xl font-bold rounded-xl cursor-pointer"></div>
@@ -22,6 +28,10 @@
   <div class="cell w-24 h-24 bg-blue-800 flex items-center justify-center text-4xl font-bold rounded-xl cursor-pointer"></div>
   <div class="cell w-24 h-24 bg-blue-800 flex items-center justify-center text-4xl font-bold rounded-xl cursor-pointer"></div>
 </div>
+
+<p id="statusIndicator" class="text-xl font-bold text-yellow-400 mb-4 text-center h-8"></p>
+
+<button id="reset" class="btn-hover px-8 py-3 bg-red-600 rounded-lg font-semibold mb-6">Play Again</button>
 
 <script src="script.js"></script>
     
